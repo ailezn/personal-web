@@ -1,0 +1,149 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1e1e2f, #2a2a3b);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        const App = () => {
+            return (
+                <div className="container mx-auto p-4">
+                    <header className="flex justify-between items-center py-4">
+                        <div className="text-2xl font-bold">Zelia</div>
+                        <nav className="space-x-4">
+                            <a href="#" className="hover:text-gray-400">Home</a>
+                            <a href="#" className="hover:text-gray-400">About</a>
+                            <a href="#" className="hover:text-gray-400">Portfolio</a>
+                        </nav>
+                        <button href="#" className="bg-orange-500 text-white px-4 py-2 rounded-full">Contact</button>
+                    </header>
+                    <main>
+                        <section className="text-center py-16">
+                            <h1 className="text-5xl font-bold">Zelia</h1>
+                            <h2 className="text-4xl font-bold">Informathics Student</h2>
+                            <p className="text-gray-400 mt-4">Universitas Teknologi Yogyakarta</p>
+                            <div className="mt-8">
+                                <i className="fas fa-user-circle text-8xl text-gray-500 mx-auto rounded-full border-4 border-white" style={{ fontSize: '400px' }}></i>
+                            </div>
+                            <div className="flex justify-center space-x-4 mt-8">
+                                <a href="https://www.linkedin.com/in/zelia-latifah-3b67b9307?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" className="text-gray-400 hover:text-white"><i className="fab fa-linkedin"></i> LinkedIn</a>
+                                <a href="https://www.instagram.com/aileznn?igsh=dmNhdmw4emphZTBv&utm_source=qr" className="text-gray-400 hover:text-white"><i className="fab fa-instagram"></i> Instagram</a>
+                                <a href="https://www.tiktok.com/@iyohanli?_t=8qP3QGQsfAL&_r=1" className="text-gray-400 hover:text-white"><i className="fab fa-tiktok"></i> Tiktok</a>
+                            </div>
+                        </section>
+                        <section className="text-center py-16">
+                            <h3 className="text-3xl font-bold">Bit about me</h3>
+                            <p className="text-gray-400 mt-4">Welcome to my personal website! I am Zelia Latifah, an Informathics student at Universitas Teknologi Yogyakarta. With a passion for technology and innovation, I am continuosly learning and developing my skills in various aspect</p>
+                            <button className="bg-orange-500 text-white px-4 py-2 rounded-full mt-4">Download CV</button>
+                        </section>
+                        <section className="text-center py-16">
+                            <h3 className="text-3xl font-bold">My Current Study</h3>
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+                                <div className="bg-gradient-to-r from-orange-400 to-pink-500 p-4 rounded-lg">
+                                    <i className="fas fa-paint-brush text-2xl"></i>
+                                    <h4 className="text-xl font-bold mt-2">Web Design</h4>
+                                    <p className="text-gray-200 mt-2">Creating stunning and funcional visual for an exceptional user experience.</p>
+                                </div>
+                                <div className="bg-gradient-to-r from-orange-400 to-pink-500 p-4 rounded-lg">
+                                    <i className="fas fa-code text-2xl"></i>
+                                    <h4 className="text-xl font-bold mt-2">Web Development</h4>
+                                    <p className="text-gray-200 mt-2">Turning ideas into reality with efficient and innovative code.</p>
+                                </div>
+                                <div className="bg-gradient-to-r from-orange-400 to-pink-500 p-4 rounded-lg">
+                                    <i className="fas fa-bullhorn text-2xl"></i>
+                                    <h4 className="text-xl font-bold mt-2">Marketing</h4>
+                                    <p className="text-gray-200 mt-2">Smart strategies to reach and captivate the right audience.</p>
+                                </div>
+                                <div className="bg-gradient-to-r from-orange-400 to-pink-500 p-4 rounded-lg">
+                                    <i className="fas fa-camera text-2xl"></i>
+                                    <h4 className="text-xl font-bold mt-2">Photography</h4>
+                                    <p className="text-gray-200 mt-2">Capturing precious moment with beauty and precision.</p>
+                                </div>
+                                <div className="bg-gradient-to-r from-orange-400 to-pink-500 p-4 rounded-lg">
+                                    <i className="fas fa-copy text-2xl"></i>
+                                    <h4 className="text-xl font-bold mt-2">Copywriting</h4>
+                                    <p className="text-gray-200 mt-2">Crafting words that inspire adn influence.</p>
+                                </div>
+                                <div className="bg-gradient-to-r from-orange-400 to-pink-500 p-4 rounded-lg">
+                                    <i className="fas fa-tasks text-2xl"></i>
+                                    <h4 className="text-xl font-bold mt-2">Organizing</h4>
+                                    <p className="text-gray-200 mt-2">Arranging everithing neatly for maximum effiency.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section className="text-center py-16">
+                            <h3 className="text-3xl font-bold">Check My Affiliates</h3>
+                            <p className="text-gray-400 mt-4">Welcome to my affiliate! Here you can find a curated list of products that i personally recomended. By using these affiliate link on my tiktok, you not only get access to great deals but also support my work. Thank you for your support.</p>
+                                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+                                    <a href="https://www.tiktok.com/@iyohanli?_t=8qP3QGQsfAL&_r=1" target="_blank" rel="noopener noreferrer">
+                                        <button className="bg-gradient-to-r from-orange-400 to-pink-500 p-4 rounded-lg w-full flex items-center justify-center hover:scale-105 transform transition duration-300">
+                                            <i className="fas fa-box-open text-6xl"></i>
+                                        </button>
+                                    </a>
+                                    <a href="https://www.tiktok.com/@iyohanli?_t=8qP3QGQsfAL&_r=1" target="_blank" rel="noopener noreferrer">
+                                        <button className="bg-gradient-to-r from-orange-400 to-pink-500 p-4 rounded-lg w-full flex items-center justify-center hover:scale-105 transform transition duration-300">
+                                            <i className="fas fa-tags text-6xl"></i>
+                                        </button>
+                                    </a>
+                                    <a href="https://www.tiktok.com/@iyohanli?_t=8qP3QGQsfAL&_r=1" target="_blank" rel="noopener noreferrer">
+                                        <button className="bg-gradient-to-r from-orange-400 to-pink-500 p-4 rounded-lg w-full flex items-center justify-center hover:scale-105 transform transition duration-300">
+                                            <i className="fas fa-shopping-cart text-6xl"></i>
+                                        </button>
+                                    </a>
+                                    <a href="https://www.tiktok.com/@iyohanli?_t=8qP3QGQsfAL&_r=1" target="_blank" rel="noopener noreferrer">
+                                        <button className="bg-gradient-to-r from-orange-400 to-pink-500 p-4 rounded-lg w-full flex items-center justify-center hover:scale-105 transform transition duration-300">
+                                            <i className="fas fa-gift text-6xl"></i>
+                                        </button>
+                                    </a>
+                                    <a href="https://www.tiktok.com/@iyohanli?_t=8qP3QGQsfAL&_r=1" target="_blank" rel="noopener noreferrer">
+                                        <button className="bg-gradient-to-r from-orange-400 to-pink-500 p-4 rounded-lg w-full flex items-center justify-center hover:scale-105 transform transition duration-300">
+                                            <i className="fas fa-star text-6xl"></i>
+                                        </button>
+                                    </a>
+                                    <a href="https://www.tiktok.com/@iyohanli?_t=8qP3QGQsfAL&_r=1" target="_blank" rel="noopener noreferrer">
+                                        <button className="bg-gradient-to-r from-orange-400 to-pink-500 p-4 rounded-lg w-full flex items-center justify-center hover:scale-105 transform transition duration-300">
+                                            <i className="fas fa-heart text-6xl"></i>
+                                        </button>
+                                    </a>
+                            </div>
+                        </section>
+                        <section className="text-center py-16">
+                            <h3 className="text-3xl font-bold">Let's Talk with Me!</h3>
+                            <p className="text-gray-400 mt-4">I am always open to discuss your project, improve your online presence or help with your UX/UI design challenges.</p>
+                            <div className="mt-8">
+                                <button className="bg-orange-500 text-white px-4 py-2 rounded-full">Contact Me</button>
+                            </div>
+                            <div className="flex justify-center space-x-4 mt-8">
+                                <a href="https://www.tiktok.com/@iyohanli?_t=8qP3QGQsfAL&_r=1" className="text-gray-400 hover:text-white"><i className="fab fa-tiktok"></i></a>
+                                <a href="" className="text-gray-400 hover:text-white"><i className="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/aileznn?igsh=dmNhdmw4emphZTBv&utm_source=qr" className="text-gray-400 hover:text-white"><i className="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/zelia-latifah-3b67b9307?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" className="text-gray-400 hover:text-white"><i className="fab fa-linkedin"></i></a>
+                            </div>
+                        </section>
+                    </main>
+                    <footer className="text-center py-4">
+                        <p className="text-gray-400">Created by Zelia | All rights reserved</p>
+                    </footer>
+                </div>
+            );
+        };
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>
